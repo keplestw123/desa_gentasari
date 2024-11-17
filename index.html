@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="https://www.datalpse.com/files/images/kldi/624ba7306affe_300x300.png" alt="Logo Desa" width="40" height="40" class="me-2">
+              Desa Gentasari
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#peta">Peta</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  
+
+    <!-- Beranda -->
+    <header id="beranda" class="text-white text-center position-relative" style="background-image: url('https://wisata.cilacapkab.go.id/assets/upload/foto_lokasi/1563844411815.jpg'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="d-flex h-100 align-items-center justify-content-center position-relative">
+            <div class="animate-text">
+                <h1 class="display-4 fw-bold">Selamat Datang di Desa Kami</h1>
+                <p class="lead">Website resmi desa dengan informasi lengkap</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile -->
+    <section id="profile" class="py-5 bg-gradient">
+        <div class="container">
+            <h2 class="text-center mb-4">Profil Desa</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://asset-2.tstatic.net/jateng/foto/bank/images/Museum-Soesilo-Soedarman-di-Desa-Gentasari.jpg" alt="Desa" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 shadow">
+                      <p> Desa Gentasari terletak di Kecamatan Kroya, Kabupaten Cilacap, Jawa Tengah, Indonesia. Desa Gentasari terdiri dari enam dusun yaitu Dusun Tinggarjati, Dusun Rawabaya, Dusun Bayeman Lor, Dusun Bayeman Kidul, Dusun Gunung Nangka dan Dusun Karag.
+                          Desa ini merupakan salah satu lumbung padi di Kabupaten Cilacap. Sebagian besar penduduknya menanam padi di area persawahan, menanam palawija di pekarangan, dan memproduksi sejumlah produk olahan pangan.Di era 1990-an, Desa Gentasari dikenal 
+                          sebagai sentra penghasil jamu tradisional. Popularitas jamu asal Gentasari mampu menembus pasar nasional dan internasional.Di desa ini terdapat Museum Soesilo Soedarman. Fasilitas pendidikan di Gentasari antara lain adalah SMP Negeri 4 Kroya 
+                          dan SMA Negeri 2 Kroya. Terdapat juga terdapat fasilitas kesehatan berupa Puskesmas Kroya II. Jarak ke ibu kota kecamatan Kroya (kurang lebih 7 km), yang dapat ditempuh dengan kendaraan umum angkutan pedesaan ataupun kendaraan pribadi.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peta -->
+    <section id="peta" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Peta Desa</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="peta.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">Kontak Kami</h2>
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div class="card p-4 shadow">
+                      <form>
+                          <div class="mb-3">
+                              <label for="name" class="form-label">Nama</label>
+                              <input type="text" class="form-control" id="name" placeholder="Masukkan Nama">
+                          </div>
+                          <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                          </div>
+                          <div class="mb-3">
+                              <label for="message" class="form-label">Pesan</label>
+                              <textarea class="form-control" id="message" rows="4" placeholder="Tulis Pesan Anda"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Kirim</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center mt-4">
+              <h4>Ikuti Kami di Media Sosial</h4>
+              <div class="d-flex justify-content-center">
+                  <a href="https://www.instagram.com/pemdesgentasari" target="_blank" class="btn btn-outline-dark mx-2">
+                      <i class="fab fa-instagram"></i> Instagram
+                  </a>
+                  <a href="https://www.facebook.com/pemdesgts" target="_blank" class="btn btn-outline-dark mx-2">
+                      <i class="fab fa-facebook"></i> Facebook
+                  </a>
+                  <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline-dark mx-2">
+                      <i class="fab fa-whatsapp"></i> WhatsApp
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 Desa Gentasari. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

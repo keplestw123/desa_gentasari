@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .animate-text {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Navbar Hover Effect */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Profile Section */
+.bg-gradient {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Peta Section */
+#peta .ratio {
+  border: 4px solid #6a11cb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form .btn-primary {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+form .btn-primary:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+.btn-outline-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Jarak antara ikon dan teks */
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40; /* Warna gelap saat hover */
+  color: white;
+}
+
+.btn-outline-dark i {
+  font-size: 1.25rem;
+}
+#profile p {
+  text-align: justify; /* Mengatur teks menjadi rata kiri dan kanan */
+  line-height: 1.8; /* Menambah jarak antar baris untuk keterbacaan */
+}
